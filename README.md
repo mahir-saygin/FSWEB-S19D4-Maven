@@ -42,7 +42,7 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
  * ```controller``` paketi altında ```MovieController``` ve ```ActorController ```adında 2 tane controller yazmalısınız.
  * Amacımız CRUD işlemlerini tanımlayan endpointler yazmak.
  * [GET]/workintech/movies => tüm movie listini dönmeli.
- * [GET]/workintech/movies/{id} => İlgili id deki burger objesini dönmeli.
+ * [GET]/workintech/movies/{id} => İlgili id deki movie objesini dönmeli.
  * [POST]/workintech/movies/ => Bir adet movie objesi ve bir adet actor objesi alır ve ikisini de veritabanına ilişkileri ile birlikte kaydeder.
  * [PUT]/workintech/movies/{id} => İlgili id deki movie objesinin değerlerini yeni gelen data ile değiştirir.
  * [DELETE]/workintech/movies/{id} => İlgili id değerindeki movie objesini veritabanından siler.
@@ -65,4 +65,21 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
  * Codepen üzerinden veya bir React uygulaması oluşturarak Spring Boot ile yazdığımız projeye request atmayı deneyiniz.
   cors hatasını nasıl çözebiliriz.
 
+
+### ⚠️ Skorun NextGen'e Kaydedilmediyse
+
+Eğer testleri çalıştırdığın halde skorun NextGen'e kaydedilmediyse, önce fork'unun güncel olup olmadığını kontrol et:
+
+1. GitHub reponu aç.
+2. Repo **X commit ahead** ve **X commits behind** şeklinde bir uyarı gösteriyorsa, branch'in güncel değildir.
+3. **Sync fork → Update branch** adımlarını uygula.
+4. Ardından localinde şu komutu çalıştır:
+
+```bash
+   git pull
+```
+
+5. Testleri tekrar çalıştır. Bu adımdan sonra skorun güncellenmiş olacaktır.
+
+> **Not:** Bu kontrolü yapmadan tekrar tekrar test çalıştırmak sorunu çözmez; sorunun kaynağı genellikle fork'un upstream repository ile senkron olmamasıdır.
  
